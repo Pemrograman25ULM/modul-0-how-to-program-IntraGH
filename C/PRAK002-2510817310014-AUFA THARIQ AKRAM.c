@@ -1,5 +1,8 @@
 #include <stdio.h>
-int main(){
-    printf("Selamat Pagi, AUFA THARIQ AKRAM \nSelamat Siang, AUFA THARIQ AKRAM\nSelamat Malam, AUFA THARIQ AKRAM");
+int main()
+{
+    char*red = "\033[1;31m";
+    char*reset = "\033[0m";
+    printf("Selamat Pagi, %sAUFA THARIQ AKRAM%s \nSelamat Siang, %sAUFA THARIQ AKRAM%s\nSelamat Malam, %sAUFA THARIQ AKRAM%s", red, reset, red, reset, red, reset);
     return 0;
 }
